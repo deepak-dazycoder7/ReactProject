@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "reactstrap";
 import './Box.css';
 
 const Box = () => {
@@ -42,18 +43,28 @@ const Box = () => {
 
         </div>
         {/* Search box and dropdown button */}
+        <div className="search-box ms-5 d-flex justify-content-center align-item-center">
+          <div class="row1 input-group border border-primary rounded-pill p-0 m-1">
+            <button class="btn btn-outline-secondary fcsrmv dropdown-toggle border rounded-start-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <input type="text" class=" remove-focus form-control border rounded-end-pill" id="input-box" aria-label="Text input with dropdown button" placeholder="Search Here..." autoComplete="off" />
 
-        <div class="row input-group mb-3 d-flex justify-content-between container-fluid">
-          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-          <input type="text" class="form-control" aria-label="Text input with dropdown button" />
+          </div>
+          {/* <div className="result-box "style={{width: '660px'}}>
+            <ul>
+              <li>javascript</li>
+              <li>webdevlopment</li>
+              <li>React JS</li>
+            </ul>
+          </div> */}
+          <div><Button color="primary" className=" remove-focus rounded-pill  mx-5 px-4 py-2 btn-lg">Search</Button></div>
         </div>
-
       </div>
     </div>
 

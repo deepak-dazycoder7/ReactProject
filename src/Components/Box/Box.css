@@ -1,22 +1,57 @@
-.search-container .dropdown-menu {
-    max-height: 200px;
-    overflow-y: auto;
-  }
-  
-  .list-group-item.search-item {
-    cursor: pointer;
-  }
-  
-  .list-group-item.search-item:hover {
-    background-color: #f8f9fa;
-  }
-  
-  .search-container {
-    height: auto;
-  }
-  
-  .list-group.position-absolute {
-    max-height: 200px;
-    overflow-y: auto;
-  }
-  
+/* .search-box{
+  width: 800px;
+  background: #fff;
+  border-radius: 5px;
+
+}
+.row1{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+input{
+  flex: 1;
+  height: 40px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.result-box ul{
+  padding: 1px 15px;
+  margin: 0;
+}
+.result-box ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+.result-box ul li:hover{
+  background: #e9f3ff;
+} */
+
+.remove-focus:focus {
+  box-shadow: none !important;
+}
+
+.dropdown-toggle:focus,
+.dropdown-menu button:focus {
+  box-shadow: none !important;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  background-color: inherit !important;
+  color: rgb(133, 132, 132) !important;
+}
+
+.container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Ensure it appears above the carousel image */
+}
