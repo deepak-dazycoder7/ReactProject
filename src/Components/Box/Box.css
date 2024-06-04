@@ -1,0 +1,22 @@
+.search-container .dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .list-group-item.search-item {
+    cursor: pointer;
+  }
+  
+  .list-group-item.search-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .search-container {
+    height: auto;
+  }
+  
+  .list-group.position-absolute {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
