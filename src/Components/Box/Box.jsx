@@ -1,37 +1,52 @@
 import React, { useState } from "react";
-import { Button } from "reactstrap";
-import './Box.css';
+import { Button, Nav, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Input } from "reactstrap";
+import './Box.css'; // Import the custom CSS for Box component
 
 const Box = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState("Dropdown");
+
+  const toggleDropdown = () => setDropdownOpen((prevState) => !prevState);
 
   const handleTabClick = (tabIndex) => {
     setActiveTab(tabIndex);
   };
 
+  const handleDropdownSelect = (item) => {
+    setSelectedItem(item);
+    setDropdownOpen(false);  // Close dropdown after selection
+  };
 
 
   return (
     <div className="container">
-      <div className="container-fluid shadow  rounded-4 p-2 container bg-white" style={{ width: "60rem", height: "auto" }}>
-        <div className=" tab-pane">
-          <ul className="nav justify-content-evenly">
-            {[...Array(6)].map((_, index) => (
-              <li className="nav-item" key={index}>
-                <a
-                  className={`nav-link text-dark ${activeTab === index ? "active" : ""}`}
-                  href="#"
-                  onClick={() => handleTabClick(index)}
-                  style={{
-                    borderBottom: activeTab === index ? "2px solid blue" : "none",
-                  }}
-                >
-                  Link{index}
-                </a>
-              </li>
-            ))}
-          </ul>
+      <div className="container-fluid shadow rounded-4 p-2 container bg-white" style={{ width: "60rem", height: "auto" }}>
+        <section>
+          {/* Tab Pane Button Links */}
+          <div className="tab-pane">
+            <Nav className="justify-content-evenly">
+              {[...Array(6)].map((_, index) => (
+                <NavItem key={index}>
+                  <NavLink
+                    className={`text-dark ${activeTab === index ? "active" : ""}`}
+                    href="#"
+                    onClick={() => handleTabClick(index)}
+                    style={{
+                      borderBottom: activeTab === index ? "2px solid blue" : "none",
+                      cursor: 'pointer'
+                    }}
+                  >
+                    Link{index}
+                  </NavLink>
+                </NavItem>
+              ))}
+            </Nav>
+          </div>
+          {/* Horizontel line break */}
           <hr className="mt-0" />
+
+          {/* tab content show selected by user  */}
           <div className="tab-content m-3">
             {[...Array(6)].map((_, index) => (
               <div key={index} className={`tab-pane ${activeTab === index ? "active" : ""}`}>
@@ -40,31 +55,80 @@ const Box = () => {
             ))}
           </div>
 
-
-        </div>
+        </section>
         {/* Search box and dropdown button */}
-        <div className="search-box ms-5 d-flex justify-content-center align-item-center">
-          <div class="row1 input-group border border-primary rounded-pill p-0 m-1">
-            <button class="btn btn-outline-secondary fcsrmv dropdown-toggle border rounded-start-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Separated link</a></li>
-            </ul>
-            <input type="text" class=" remove-focus form-control border rounded-end-pill" id="input-box" aria-label="Text input with dropdown button" placeholder="Search Here..." autoComplete="off" />
 
-          </div>
-          {/* <div className="result-box "style={{width: '660px'}}>
-            <ul>
-              <li>javascript</li>
-              <li>webdevlopment</li>
-              <li>React JS</li>
-            </ul>
-          </div> */}
-          <div><Button color="primary" className=" remove-focus rounded-pill  mx-5 px-4 py-2 btn-lg">Search</Button></div>
+        <div className="container-box d-flex">
+          {/* DropToggle & input Search box  */}
+          <section>
+            <div className="ms-5" style={{ width: '700px' }}>
+              <div className="drop-search d-flex border border-primary rounded-pill">
+                <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown}>
+                  <DropdownToggle
+                    caret
+                    color="outline-primary"
+                    className="border rounded-start-pill"
+                  >
+                    {selectedItem}
+                  </DropdownToggle>
+                  <DropdownMenu className="border border-primary border-top-0" style={{ width: '700px' }}>
+                    <DropdownItem onClick={() => handleDropdownSelect("Action")}>Action</DropdownItem>
+                    <DropdownItem onClick={() => handleDropdownSelect("Another action")}>Another action</DropdownItem>
+                    <DropdownItem onClick={() => handleDropdownSelect("Something else here")}>Something else here</DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem onClick={() => handleDropdownSelect("Separated link")}>Separated link</DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
+                <Input
+                  type="text"
+                  className="remove-focus form-control border rounded-end-pill"
+                  aria-label="Text input with dropdown button"
+                  placeholder="Search Here..."
+
+                />
+              </div>
+              <div className="drop-search d-flex border border-primary border-bottom-o rounded-top">
+                <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown}>
+                  <DropdownToggle
+                    caret
+                    color="outline-primary"
+                    className="border rounded-0 rounded-top "
+                  >
+                    {selectedItem}
+                  </DropdownToggle>
+                  <DropdownMenu className="border border-primary border-top-0 rounded-top-0" style={{ width: '700px', marginLeft: '-1px', }}>
+                    <DropdownItem onClick={() => handleDropdownSelect("Action")}>Action</DropdownItem>
+                    <DropdownItem onClick={() => handleDropdownSelect("Another action")}>Another action</DropdownItem>
+                    <DropdownItem onClick={() => handleDropdownSelect("Something else here")}>Something else here</DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem onClick={() => handleDropdownSelect("Separated link")}>Separated link</DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
+                <Input
+                  type="text"
+                  className="remove-focus form-control border rounded-0 rounded-top"
+                  aria-label="Text input with dropdown button"
+                  placeholder="Search Here..."
+
+                />
+              </div>
+              {/* related to user searched */}
+              <div className="search-drop-item border outline-primary p-1">
+                <ul>
+                  <li>user input and search</li>
+                  <li>user input and search</li>
+                </ul>
+              </div>
+
+            </div>
+          </section>
+          <section>
+            <div className="search-btn ms-5">
+              <Button color="primary" className="remove-focus rounded-pill  px-4 py-1 ">Search</Button>
+            </div>
+          </section>
         </div>
+
       </div>
     </div>
 
