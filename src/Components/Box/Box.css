@@ -1,11 +1,6 @@
 .remove-focus:focus {
   box-shadow: none !important;
-}
-
-.dropdown-toggle:focus,
-.dropdown-menu button:focus {
-  box-shadow: none !important;
-}
+} 
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
@@ -19,4 +14,38 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10; 
+}
+
+/* Initially hide the list */
+.list-container {
+  display: none;
+}
+
+/* Show the list when the input is clicked or focused */
+#inputField:focus + .list-container,
+#inputField:active + .list-container {
+  display: block;
+}
+/* Focus styles for the dropdown button and input */
+.focus-container:focus-within .dropdown-toggle,
+.focus-container:focus-within .form-control {
+  border-bottom: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.focus-container:focus-within .dropdown-toggle{
+  border-top-left-radius: 5px !important;
+  border-right: none !important;
+}
+.focus-container:focus-within .form-control{
+  border-top-right-radius: 5px !important;
+  border-left: none !important;
+}
+.list-container{
+  width: 700px;
+  position: absolute;
+  left: 56px ;
+}
+.list-container  li:hover{
+  background-color: #ededed;
 }

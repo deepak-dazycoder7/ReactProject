@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Button, Nav, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Input } from "reactstrap";
-import './Box.css'; // Import the custom CSS for Box component
+import './Box.css';
 
 const Box = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -15,7 +15,7 @@ const Box = () => {
 
   const handleDropdownSelect = (item) => {
     setSelectedItem(item);
-    setDropdownOpen(false);  // Close dropdown after selection
+    setDropdownOpen(true);  // Close dropdown after selection
   };
 
 
@@ -61,17 +61,17 @@ const Box = () => {
         <div className="container-box d-flex">
           {/* DropToggle & input Search box  */}
           <section>
-            <div className="ms-5" style={{ width: '700px' }}>
-              <div className="drop-search d-flex border border-primary rounded-pill">
+            <div className="ms-5 mb-2 focus-container d-flex" style={{ width: '700px' }}>
+              <div className="">
                 <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown}>
                   <DropdownToggle
                     caret
                     color="outline-primary"
-                    className="border rounded-start-pill"
+                    className="droptoggle border rounded-start-pill border-primary"
                   >
                     {selectedItem}
                   </DropdownToggle>
-                  <DropdownMenu className="border border-primary border-top-0" style={{ width: '700px' }}>
+                  <DropdownMenu className=" dropmenu border border-primary border-top-0 rounded-top-0" style={{ width: '700px' }}>
                     <DropdownItem onClick={() => handleDropdownSelect("Action")}>Action</DropdownItem>
                     <DropdownItem onClick={() => handleDropdownSelect("Another action")}>Another action</DropdownItem>
                     <DropdownItem onClick={() => handleDropdownSelect("Something else here")}>Something else here</DropdownItem>
@@ -79,47 +79,25 @@ const Box = () => {
                     <DropdownItem onClick={() => handleDropdownSelect("Separated link")}>Separated link</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
+              </div>
+              <div style={{ width: '700px' }}>
                 <Input
                   type="text"
-                  className="remove-focus form-control border rounded-end-pill"
+                  className="form-control border rounded-end-pill  border-primary"
                   aria-label="Text input with dropdown button"
                   placeholder="Search Here..."
-
+                  id="inputField"
                 />
+                {/* related to user searched */}
+                <div className="list-container bg-white shadow border border-primary border-top-0 rounded-bottom">
+                  <ul className="list-unstyled p-2">
+                    <li>User input </li>
+                    <li>User search</li>
+                    <li>User input and search</li>
+                    <li>Search history</li>
+                  </ul>
+                </div>
               </div>
-              <div className="drop-search d-flex border border-primary border-bottom-o rounded-top">
-                <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown}>
-                  <DropdownToggle
-                    caret
-                    color="outline-primary"
-                    className="border rounded-0 rounded-top "
-                  >
-                    {selectedItem}
-                  </DropdownToggle>
-                  <DropdownMenu className="border border-primary border-top-0 rounded-top-0" style={{ width: '700px', marginLeft: '-1px', }}>
-                    <DropdownItem onClick={() => handleDropdownSelect("Action")}>Action</DropdownItem>
-                    <DropdownItem onClick={() => handleDropdownSelect("Another action")}>Another action</DropdownItem>
-                    <DropdownItem onClick={() => handleDropdownSelect("Something else here")}>Something else here</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem onClick={() => handleDropdownSelect("Separated link")}>Separated link</DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-                <Input
-                  type="text"
-                  className="remove-focus form-control border rounded-0 rounded-top"
-                  aria-label="Text input with dropdown button"
-                  placeholder="Search Here..."
-
-                />
-              </div>
-              {/* related to user searched */}
-              <div className="search-drop-item border outline-primary p-1">
-                <ul>
-                  <li>user input and search</li>
-                  <li>user input and search</li>
-                </ul>
-              </div>
-
             </div>
           </section>
           <section>
