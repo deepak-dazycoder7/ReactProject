@@ -6,7 +6,7 @@ import bannerImg from "../../assets/bannerimg.jpg";
 const Banner = () => {
     return (
         <Container fluid className="banner" > 
-            <div className=" w-100 h-100 position-relative " style={{ marginTop: '150px' }}>
+            <div className=" w-100 h-100 position-relative margin-top ">
                 <img
                     src={bannerImg}
                     alt="Banner"

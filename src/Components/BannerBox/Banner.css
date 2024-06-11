@@ -5,6 +5,10 @@
 .banner{
     height: 450px;
 }
+
+.margin-top{
+    margin-top: 150px;
+}
 .svg-overlay path {
     opacity: 0.3; /* Adjust opacity as needed */
     position: absolute;
