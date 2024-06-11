@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { Button, Nav, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Input } from "reactstrap";
 import './Box.css';
 
@@ -21,7 +21,7 @@ const Box = () => {
 
   return (
     <div className="container">
-      <div className="container-fluid shadow rounded-4 p-2 container bg-white" style={{ width: "60rem", height: "auto" }}>
+      <div className="container-fluid boxctn shadow rounded-4 p-2 container bg-white" style={{ width: "60rem", height: "auto" }}>
         <section>
           {/* Tab Pane Button Links */}
           <div className="tab-pane">
@@ -102,7 +102,7 @@ const Box = () => {
           </section>
           <section>
             <div className="search-btn ms-5">
-              <Button color="primary" className="remove-focus rounded-pill  px-4 py-1 ">Search</Button>
+              <Button color="primary" className="remove-focus rounded-pill  px-4 py-2 ">Search</Button>
             </div>
           </section>
         </div>

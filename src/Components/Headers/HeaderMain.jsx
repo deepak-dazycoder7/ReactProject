@@ -5,32 +5,59 @@ import { IoLocation } from "react-icons/io5";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { IoLanguageSharp } from "react-icons/io5";
 import { FaCircleUser } from "react-icons/fa6";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  Collapse,
+  Nav,
+  NavItem,
+  NavLink,
+  Container
+} from 'reactstrap';
 
 const HeaderMain = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg fixed-top z-3 position-absolute p-4 navbar-light">
-        <div className="container-fluid m-0 p-0">
-          <a className="navbar-brand" href="#"><img src={Logo} alt="" /></a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="oi oi-menu"></span> Menu
-          </button>
-
-          <div className="collapse navbar-collapse justify-content-between fs-5" id="ftco-nav">
-            <ul className="navbar-nav ms-5">
-              <li className="nav-item active"><a href="#" className="nav-link text-white">Home</a></li>
-              <li className="nav-item"><a href="#" className="nav-link text-white">About Us</a></li>
-              <li className="nav-item"><a href="#" className="nav-link text-white">Contact</a></li>
-            </ul>
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item"><a href="#" className="nav-link text-white"><IoLocation /></a></li>
-              <li className="nav-item"><a href="#" className="nav-link text-white"><RiCustomerService2Fill /></a></li>
-              <li className="nav-item"><a href="#" className="nav-link text-white"><IoLanguageSharp /></a></li>
-              <li className="nav-item"><a href="#" className="nav-link text-white"><FaCircleUser /></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar color="transparent" light expand="lg" fixed="top" className="z-10 position-fixed w-100 p-4">
+        <Container fluid className="m-0 p-0 d-flex">
+          <NavbarBrand href="#">
+            <img src={Logo} alt="Logo" />
+          </NavbarBrand>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar className="justify-content-between fs-5">
+            <Nav className="ms-5" navbar>
+              <NavItem>
+                <NavLink href="#" className="text-white">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#" className="text-white">About Us</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#" className="text-white">Contact</NavLink>
+              </NavItem>
+            </Nav>
+            <Nav className="ms-auto" navbar>
+              <NavItem>
+                <NavLink href="#" className="text-white"><IoLocation /></NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#" className="text-white"><RiCustomerService2Fill /></NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#" className="text-white"><IoLanguageSharp /></NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#" className="text-white"><FaCircleUser /></NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Container>
+      </Navbar>
     </>
   );
 }

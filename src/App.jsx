@@ -1,19 +1,18 @@
-import { useState } from "react";
-import "./App.css";
-import HeaderMain from "./Components/Headers/HeaderMain";
-import Banner from "./Components/banners/Banner";
-import Box from "./Components/Box/Box";
-function App() {
-  const [count, setCount] = useState(0);
+import React from 'react'
+import HeaderMain from './Components/Headers/HeaderMain'
+import Carousel from './Components/Carousel/Carousel'
+import Box from './Components/Box/Box'
+import Banner from './Components/BannerBox/Banner'
 
+const App = () => {
   return (
     <>
-         <HeaderMain/>
-        <Banner/>
-        <Box/>
-  
-        
+      <HeaderMain/>
+      <Carousel/>
+      <Box/>
+      <Banner/> 
     </>
-  );
+  )
 }
-export default App;
+
+export default App
