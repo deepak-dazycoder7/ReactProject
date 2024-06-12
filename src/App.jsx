@@ -13,7 +13,6 @@ const App = () => {
       <Box/>
       <Banner/>
       <Citysearch/> 
-     
     </>
   )
 }

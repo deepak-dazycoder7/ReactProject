@@ -1,22 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.banner{
-    height: 450px;
-}
-
-.margin-top{
-    margin-top: 150px;
-}
-.svg-overlay path {
-    opacity: 0.3; /* Adjust opacity as needed */
-    position: absolute;
+.svg-overlay {
+    top: 0;
+    height: 75%;
     z-index: 1;
 }
-
-.headings {
-    position: absolute;
-    z-index: 2;
+.svg-overlay path {
+    opacity: 0.4;
 }
-
+.overlay-content {
+    z-index: 2 !important;
+}
