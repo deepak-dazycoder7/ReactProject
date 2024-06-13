@@ -10,7 +10,7 @@ const App = () => {
     <>
       <HeaderMain/>
       <Carousel/>
-      <Box/>
+      {/* <Box/> */}
       <Banner/>
       <Citysearch/> 
     </>
