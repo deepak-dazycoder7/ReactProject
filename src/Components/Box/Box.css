@@ -8,13 +8,6 @@
   color: rgb(133, 132, 132) !important;
 }
 
-.boxctn {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10; 
-}
 
 /* Initially hide the list */
 .list-container {
@@ -44,7 +37,7 @@
 .list-container{
   width: 700px;
   position: absolute;
-  left: 56px ;
+  left: 208px ;
 }
 .list-container  li:hover{
   background-color: #ededed;

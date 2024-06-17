@@ -1,0 +1,19 @@
+.footer-container {
+    background-image: url('../../assets/earth-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 420px;
+    position: relative;
+}
+
+.bg-gradient-overlay {
+    background: rgb(2,10,36);
+background: linear-gradient(0deg, rgba(2,10,36,0.978203781512605) 38%, rgba(2,10,36,0.782125350140056) 64%, rgba(7,31,115,0.3311449579831933) 81%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 650px;
+}

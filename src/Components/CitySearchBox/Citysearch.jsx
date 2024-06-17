@@ -11,6 +11,8 @@ import Chennai from '../../assets/chen.avif'
 import Banglore from '../../assets/bangluru.png'
 import Ahemdabad from '../../assets/ahd.avif'
 import Chandigarh from '../../assets/chd.avif'
+import Hydrabaad from '../../assets/hyd.png'
+import Pune from '../../assets/pune.png'
 import './Citysearch.css'
 
 const Citysearch = () => {
@@ -68,7 +70,7 @@ const Citysearch = () => {
                                 <Col md={{
                                     offset: 1,
                                     size: '5'
-                                }} sm='12' className='text-center'>
+                                }} sm='12' className='text-center mb-2'>
                                     <Select
                                         value={selectedCountry}
                                         onChange={handleChange}
@@ -79,8 +81,8 @@ const Citysearch = () => {
                                             control: (provided) => ({
                                                 ...provided,
                                                 borderRadius: 20,
-                                                borderColor: '#80bdff',
-                                                '&:hover': { borderColor: '#80bdff' }
+                                                borderColor: '#70bdff',
+                                                '&:hover': { borderColor: '#70bdff' }
                                             })
                                         }}
                                     />
@@ -96,8 +98,8 @@ const Citysearch = () => {
                                             control: (provided) => ({
                                                 ...provided,
                                                 borderRadius: 20,
-                                                borderColor: '#80bdff',
-                                                '&:hover': { borderColor: '#80bdff' }
+                                                borderColor: '#70bdff',
+                                                '&:hover': { borderColor: '#70bdff' }
                                             })
                                         }}
                                     />
@@ -106,52 +108,76 @@ const Citysearch = () => {
                         </CardBody>
                     </Card>
                     <Row>
-                        <Col md='3' sm='6'>
-                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center " style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', marginBottom: '20px', height: '180px' }}>
                                 <div className="py-3"><img src={Mumbai} alt="Mumbai" className="img-fluid" /></div>
                                 <div className="pb-2">Mumbai</div>
                             </div>
                         </Col>
-                        <Col md='3' sm='6'>
-                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center " style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', marginBottom: '20px', height: '180px' }}>
+                                <div className="py-3"><img src={Mumbai} alt="Mumbai" className="img-fluid" /></div>
+                                <div className="pb-2">Mumbai</div>
+                            </div>
+                        </Col>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center " style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', marginBottom: '20px', height: '180px' }}>
+                                <div className="py-3"><img src={Mumbai} alt="Mumbai" className="img-fluid" /></div>
+                                <div className="pb-2">Mumbai</div>
+                            </div>
+                        </Col>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', marginBottom: '20px', height: '180px' }}>
                                 <div className="py-3"><img src={Kolkata} alt="Kolkata" className="img-fluid" /></div>
                                 <div className="pb-2">Kolkata</div>
                             </div>
                         </Col>
-                        <Col md='3' sm='6'>
-                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', height: '180px' }}>
                                 <div className="py-3"><img src={Delhi} alt="Delhi" className="img-fluid" /></div>
                                 <div className="pb-2">Delhi</div>
                             </div>
                         </Col>
-                        <Col md='3' sm='6'>
-                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', height: '180px' }}>
                                 <div className="py-3"><img src={Chennai} alt="Chennai" className="img-fluid" /></div>
                                 <div className="pb-2">Chennai</div>
                             </div>
                         </Col>
-                        <Col md='3' sm='6'>
-                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', height: '180px' }}>
                                 <div className="py-3"><img src={Kochi} alt="Kochi" className="img-fluid" /></div>
                                 <div className="pb-2">Kochi</div>
                             </div>
                         </Col>
-                        <Col md='3' sm='6'>
-                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', height: '180px' }}>
                                 <div className="py-3"><img src={Chandigarh} alt="Chandigarh" className="img-fluid" /></div>
                                 <div className="pb-2">Chandigarh</div>
                             </div>
                         </Col>
-                        <Col md='3' sm='6'>
-                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%',  height: '180px' }}>
                                 <div className="py-3"><img src={Ahemdabad} alt="Ahemdabad" className="img-fluid" /></div>
                                 <div className="pb-2">Ahemdabad</div>
                             </div>
                         </Col>
-                        <Col md='3' sm='6'>
-                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', height: '180px' }}>
                                 <div className="py-3"><img src={Banglore} alt="Banglore" className="img-fluid" /></div>
                                 <div className="pb-2">Banglore</div>
+                            </div>
+                        </Col>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', height: '180px' }}>
+                                <div className="py-3"><img src={Hydrabaad} alt="hydrabaad" className="img-fluid" /></div>
+                                <div className="pb-2">Hydrabaad</div>
+                            </div>
+                        </Col>
+                        <Col md='2' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '90%', height: '180px' }}>
+                                <div className="py-3"><img src={Pune} alt="Pune" className="img-fluid" /></div>
+                                <div className="pb-2">Pune</div>
                             </div>
                         </Col>
                     </Row>

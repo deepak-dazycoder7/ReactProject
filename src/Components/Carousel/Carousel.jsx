@@ -54,7 +54,7 @@ function CarouselComponent(args) {
         onExited={() => setAnimating(false)}
         key={item.key} // Use a unique identifier as key
       >
-        <img src={item.src} alt={item.altText} style={{ width: '100%', height: '350px', objectFit: 'cover' }} />
+        <img src={item.src} alt={item.altText} style={{ width: '100%', height: '100vh', objectFit: 'cover' }} />
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
@@ -69,7 +69,7 @@ function CarouselComponent(args) {
       next={next}
       previous={previous}
       {...args}
-      style={{ width: '100%', height: '350px' }}
+      style={{ width: '100%', height: '100vh' }}
     >
       <CarouselIndicators
         items={items}

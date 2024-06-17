@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Button, Nav, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Input } from "reactstrap";
+import { Container, Button, Nav, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Input } from "reactstrap";
+import SearchBg from '../../assets/search-box-bg.jpg'
 import './Box.css';
 
 const Box = () => {
@@ -20,8 +21,9 @@ const Box = () => {
 
 
   return (
-    <div className="container">
-      <div className="container-fluid boxctn shadow rounded-4 p-2 container bg-white" style={{ width: "60rem", height: "auto" }}>
+    <Container fluid className="d-flex align-items-center justify-content-center" 
+    style={{ backgroundImage: `url(${SearchBg})`,height: '400px', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+      <Container className="shadow rounded-4 p-2 bg-white" style={{ width: "60rem", height: "auto" }}>
         <section>
           {/* Tab Pane Button Links */}
           <div className="tab-pane">
@@ -107,8 +109,8 @@ const Box = () => {
           </section>
         </div>
 
-      </div>
-    </div>
+      </Container>
+    </Container>
 
   );
 };
