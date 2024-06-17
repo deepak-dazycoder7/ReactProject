@@ -1,40 +1,88 @@
-import React, { useState } from "react";
-import ReactFlagsSelect from "react-flags-select";
-import "./test.css"; // You can import your custom CSS for styling
+// import React, { useState, useEffect } from 'react';
+// import './HeaderMain.css';
+// import { IoLocation } from "react-icons/io5";
+// import { RiCustomerService2Fill } from "react-icons/ri";
+// import { IoLanguageSharp } from "react-icons/io5";
+// import { FaCircleUser } from "react-icons/fa6";
+// import {
+//   Navbar,
+//   NavbarBrand,
+//   NavbarToggler,
+//   Collapse,
+//   Nav,
+//   NavItem,
+//   NavLink,
+//   Container
+// } from 'reactstrap';
 
-const SearchableFlagsSelect = () => {
-  const [selected, setSelected] = useState('');
+// const HeaderMain = () => {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Function to handle search input
-  const handleSearch = (searchQuery) => {
-    // You can implement your own search logic here
-    // For example, filtering based on country name or code
-    // This is a simple example that filters based on country name
-    const filteredCountries = countryList.filter((country) =>
-      country.label.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-    return filteredCountries;
-  };
+//   const toggle = () => setIsOpen(!isOpen);
 
-  return (
-    <div className="container d-flex justify-content-center align-items-center border p-0 m-0 w-100">
-      <ReactFlagsSelect
-        selected={selected}
-        onSelect={(code) => setSelected(code)}
-        placeholder="Select Country"
-        searchable
-        customSearch={handleSearch} // Custom search function
-      />
-    </div>
-  );
-};
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (window.scrollY > 200) {
+//         setIsScrolled(true);
+//       } else {
+//         setIsScrolled(false);
+//       }
+//     };
 
-// Sample country list
-const countryList = [
-  { value: "US", label: "United States", title: "United States" },
-  { value: "GB", label: "United Kingdom", title: "United Kingdom" },
-  { value: "CA", label: "Canada", title: "Canada" },
-  // Add more countries as needed
-];
+//     window.addEventListener('scroll', handleScroll);
 
-export default SearchableFlagsSelect;
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }, []);
+
+//   return (
+//     <>
+//       <Navbar
+//         color={isScrolled ? 'secondary' : 'transparent'}
+//         light={!isScrolled}
+//         dark={isScrolled}
+//         expand="lg"
+//         fixed="top"
+//         className="p-4"
+//       >
+//         <Container fluid className="m-0 p-0 d-flex">
+//           <NavbarBrand href="#">
+//             <img src='' alt="Logo" />
+//           </NavbarBrand>
+//           <NavbarToggler onClick={toggle} />
+//           <Collapse isOpen={isOpen} navbar className="fs-5">
+//             <Nav className="ms-5 justify-content-between" navbar>
+//               <NavItem>
+//                 <NavLink href="#" className="text-white">Home</NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="#" className="text-white">About Us</NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="#" className="text-white">Contact</NavLink>
+//               </NavItem>
+//             </Nav>
+//             <Nav className="ms-auto" navbar>
+//               <NavItem>
+//                 <NavLink href="#" className="text-white"><IoLocation /></NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="#" className="text-white"><RiCustomerService2Fill /></NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="#" className="text-white"><IoLanguageSharp /></NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="#" className="text-white"><FaCircleUser /></NavLink>
+//               </NavItem>
+//             </Nav>
+//           </Collapse>
+//         </Container>
+//       </Navbar>
+//     </>
+//   );
+// }
+
+// export default HeaderMain;

@@ -53,9 +53,9 @@ const Citysearch = () => {
 
     return (
         <>
-            <Container fluid className="h-100 w-100"
+            <Container fluid
                 style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-                <section className='w-75 w-md-100 mx-auto p-5'>
+                <Container className='p-5'>
                     <Card className='mb-5' style={{
                         backgroundColor: 'rgba(255, 255, 255, 0.7)',
                         boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
@@ -65,10 +65,10 @@ const Citysearch = () => {
                         </CardHeader>
                         <CardBody>
                             <Row>
-                                <Col xs="12" md="6" lg={{
+                                <Col md={{
                                     offset: 1,
-                                    size: 5
-                                }}>
+                                    size: '5'
+                                }} sm='12' className='text-center'>
                                     <Select
                                         value={selectedCountry}
                                         onChange={handleChange}
@@ -85,7 +85,10 @@ const Citysearch = () => {
                                         }}
                                     />
                                 </Col>
-                                <Col xs="12" md="6" lg="5" className="mt-3 mt-md-0">
+                                <Col md={{
+                                    offset: 0,
+                                    size: '5'
+                                }} sm='12' className='text-center '>
                                     <Select
                                         placeholder="Select a State..."
                                         isSearchable={true}
@@ -102,57 +105,57 @@ const Citysearch = () => {
                             </Row>
                         </CardBody>
                     </Card>
-                    <ul className="row m-0 p-0 list-unstyled">
-                        <li className="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center" style={{ flexShrink: 0 }}>
-                            <div className="hover-box bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
-                                <div className="px-4 py-2"><img src={Mumbai} alt="Mumbai" className="img-fluid" /></div>
+                    <Row>
+                        <Col md='3' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                                <div className="py-3"><img src={Mumbai} alt="Mumbai" className="img-fluid" /></div>
                                 <div className="pb-2">Mumbai</div>
                             </div>
-                        </li>
-                        <li className="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center" style={{ flexShrink: 0 }}>
-                            <div className="hover-box bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
-                                <div className="px-4 py-2"><img src={Kolkata} alt="Kolkata" className="img-fluid" /></div>
+                        </Col>
+                        <Col md='3' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                                <div className="py-3"><img src={Kolkata} alt="Kolkata" className="img-fluid" /></div>
                                 <div className="pb-2">Kolkata</div>
                             </div>
-                        </li>
-                        <li className="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center" style={{ flexShrink: 0 }}>
-                            <div className="hover-box bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
-                                <div className="px-4 py-2"><img src={Delhi} alt="Delhi" className="img-fluid" /></div>
+                        </Col>
+                        <Col md='3' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                                <div className="py-3"><img src={Delhi} alt="Delhi" className="img-fluid" /></div>
                                 <div className="pb-2">Delhi</div>
                             </div>
-                        </li>
-                        <li className="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center" style={{ flexShrink: 0 }}>
-                            <div className="hover-box bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
-                                <div className="px-4 py-2"><img src={Chennai} alt="Chennai" className="img-fluid" /></div>
+                        </Col>
+                        <Col md='3' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                                <div className="py-3"><img src={Chennai} alt="Chennai" className="img-fluid" /></div>
                                 <div className="pb-2">Chennai</div>
                             </div>
-                        </li>
-                        <li className="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center" style={{ flexShrink: 0 }}>
-                            <div className="hover-box bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
-                                <div className="px-4 py-2"><img src={Kochi} alt="Kochi" className="img-fluid" /></div>
+                        </Col>
+                        <Col md='3' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                                <div className="py-3"><img src={Kochi} alt="Kochi" className="img-fluid" /></div>
                                 <div className="pb-2">Kochi</div>
                             </div>
-                        </li>
-                        <li className="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center" style={{ flexShrink: 0 }}>
-                            <div className="hover-box bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
-                                <div className="px-4 py-2"><img src={Chandigarh} alt="Chandigarh" className="img-fluid" /></div>
+                        </Col>
+                        <Col md='3' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                                <div className="py-3"><img src={Chandigarh} alt="Chandigarh" className="img-fluid" /></div>
                                 <div className="pb-2">Chandigarh</div>
                             </div>
-                        </li>
-                        <li className="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center" style={{ flexShrink: 0 }}>
-                            <div className="hover-box bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
-                                <div className="px-4 py-2"><img src={Ahemdabad} alt="Ahemdabad" className="img-fluid" /></div>
+                        </Col>
+                        <Col md='3' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                                <div className="py-3"><img src={Ahemdabad} alt="Ahemdabad" className="img-fluid" /></div>
                                 <div className="pb-2">Ahemdabad</div>
                             </div>
-                        </li>
-                        <li className="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center" style={{ flexShrink: 0 }}>
-                            <div className="hover-box bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
-                                <div className="px-4 py-2"><img src={Banglore} alt="Banglore" className="img-fluid" /></div>
+                        </Col>
+                        <Col md='3' sm='6'>
+                            <div className="hover-box mb-3 bg-white rounded d-flex flex-column justify-content-center align-items-center" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)', width: '100%' }}>
+                                <div className="py-3"><img src={Banglore} alt="Banglore" className="img-fluid" /></div>
                                 <div className="pb-2">Banglore</div>
                             </div>
-                        </li>
-                    </ul>
-                </section>
+                        </Col>
+                    </Row>
+                </Container>
             </Container>
         </>
     )
