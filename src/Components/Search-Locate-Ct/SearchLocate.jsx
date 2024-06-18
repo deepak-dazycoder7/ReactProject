@@ -4,6 +4,9 @@ import bgimg from '../../assets/locate-City.jpg'
 import lotus from '../../assets/lotus-temple.png'
 import taj from '../../assets/taj-mahal.png'
 import indiaGate from '../../assets/india-gate.png'
+import Redfort from '../../assets/red-fort.png'
+import Hawamahal from '../../assets/hawa-mahal.png'
+import Statue from '../../assets/statue-of-unity.png'
 import './SearchLocate.css'
 const SearchLocate = () => {
     return (
@@ -37,20 +40,20 @@ const SearchLocate = () => {
                         <Row>
                         <Col md='2' sm='6' >
                                 <div sm='6' className="mb-2 text-center">
-                                    <img src={taj} alt="" srcset="" style={{ width: '80px' }}/>
-                                    <div className="pt-2 fs-5">AAGARA</div>
+                                    <img src={Redfort} alt="" srcset="" style={{ width: '80px' }}/>
+                                    <div className="pt-2 fs-5">DELHI</div>
                                 </div>
                         </Col>
                         <Col md='2' sm='6'>
                                 <div sm='6' className="mb-2 text-center ">
-                                    <img src={lotus} alt="" style={{ width: '80px' }}/>
-                                    <div className="pt-2 fs-5">GUJRAT</div>
+                                    <img src={Hawamahal} alt="" style={{ width: '80px' }}/>
+                                    <div className="pt-2 fs-5">JAIPUR</div>
                                 </div>
                         </Col>
                         <Col md='2' sm='6'>
                                 <div sm='6' className="mb-2 text-center ">
-                                <img src={indiaGate} alt="" srcset="" style={{ width: '80px' }}/>
-                                <div className="pt-2 fs-5">DELHI</div>
+                                <img src={Statue} alt="" srcset="" style={{ width: '80px' }}/>
+                                <div className="pt-2 fs-5">GUJRAT</div>
                                 </div>
                         </Col>
                         <Col md='2' sm='6'>

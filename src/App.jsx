@@ -11,7 +11,7 @@ const App = () => {
     <>
       <HeaderMain />
       <Carousel />
-      {/* <Box /> */}
+      <Box />
       <SearchLocate/>
       <Banner />
       <Citysearch />

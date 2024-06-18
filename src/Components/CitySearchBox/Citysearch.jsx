@@ -70,7 +70,7 @@ const Citysearch = () => {
                                 <Col md={{
                                     offset: 1,
                                     size: '5'
-                                }} sm='12' className='text-center mb-2'>
+                                }} sm='12' className=' mb-2'>
                                     <Select
                                         value={selectedCountry}
                                         onChange={handleChange}
@@ -90,7 +90,7 @@ const Citysearch = () => {
                                 <Col md={{
                                     offset: 0,
                                     size: '5'
-                                }} sm='12' className='text-center '>
+                                }} sm='12' >
                                     <Select
                                         placeholder="Select a State..."
                                         isSearchable={true}

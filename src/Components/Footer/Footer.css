@@ -3,17 +3,18 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 420px;
+    height: 400px;
     position: relative;
 }
 
 .bg-gradient-overlay {
-    background: rgb(2,10,36);
-background: linear-gradient(0deg, rgba(2,10,36,0.978203781512605) 38%, rgba(2,10,36,0.782125350140056) 64%, rgba(7,31,115,0.3311449579831933) 81%);
+    background: rgb(1,6,20);
+    background: linear-gradient(0deg, rgba(1,6,20,1) 50%, rgba(9,19,50,0.8885679271708683) 65%, rgba(7,31,115,0.1966911764705882) 74%);
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 17%;
     left: 0;
-    height: 650px;
+    min-height: 663px;
+    max-width: auto;
 }
