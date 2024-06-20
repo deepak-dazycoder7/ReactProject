@@ -49,32 +49,32 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-        <Container style={{ position: "relative", top: "20%", marginLeft: '60px' }}>
+        <Container style={{ position: "relative", top: "15%", marginLeft: '60px' }}>
           <Row >
             <Col md="3" sm="6">
               <Card className="bg-transparent">
                 <CardBody>
-                  <CardTitle tag="h4" className="text-white">
+                  <CardTitle tag="h2" className="text-white mb-4">
                     Dazy-Coders
                   </CardTitle>
                   <CardText>
                     <div className="text-white d-flex ">
-                      <span className="border border-primary fs-3 rounded-circle px-2  ms-0">
+                      <span className="border border-primary fs-5 rounded-circle  " style={{ padding:'5px 12px 0px 12px'}}>
                         <MdLocationOn />
                       </span>
-                      <div className="ms-3 ">
+                      <span className="ms-3 ">
                         1H second floore, Near Daya Tower, Neemuch (M.P.)
-                      </div>
+                      </span>
                     </div>
                   </CardText>
                   <CardText>
-                    <span className="text-white border fs-3 border-primary p-2 px-2 pt-1 rounded-circle ">
+                    <span className="text-white border fs-4 border-primary p-2 px-2 pt-0 rounded-circle ">
                       <MdOutlinePhoneAndroid />
                     </span>
                     <span className="text-white ms-3"> +91 8834564340</span>
                   </CardText>
                   <CardText className="mt-4">
-                    <span className="text-white border border-primary fs-3 p-2 px-2 pt-1 rounded-circle">
+                    <span className="text-white border border-primary fs-4 p-2 px-2 pt-0 rounded-circle">
                       <MdOutlineAttachEmail />
                     </span>
                     <span className="text-white ms-3">
@@ -86,23 +86,23 @@ const Footer = () => {
             </Col>
             <Col md="2" sm="6">
               <Card className="bg-transparent">
-                <CardBody className="d-flex flex-column ps-1">
-                  <CardTitle tag="h5" className="text-white">
+                <CardBody className="d-flex flex-column ps-6">
+                  <CardTitle tag="h5" className="text-white fs-4">
                     Company
                   </CardTitle>
-                  <CardLink href="#" className="text-decoration-none ">
+                  <CardLink href="#" className="text-decoration-none py-1">
                     <span className="text-white">About Us</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none ms-0">
+                  <CardLink href="#" className="text-decoration-none ms-0 py-1">
                     <span className="text-white">Privacy Policy</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none ms-0">
+                  <CardLink href="#" className="text-decoration-none ms-0 py-1">
                     <span className="text-white">Feedback</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none ms-0">
+                  <CardLink href="#" className="text-decoration-none ms-0 py-1">
                     <span className="text-white">Help?</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none ms-0">
+                  <CardLink href="#" className="text-decoration-none ms-0 py-1">
                     <span className="text-white">More...</span>
                   </CardLink>
                 </CardBody>
@@ -111,22 +111,22 @@ const Footer = () => {
             <Col md="2" sm="6">
               <Card className="bg-transparent">
                 <CardBody className="ps-1 d-flex flex-column">
-                  <CardTitle tag="h5" className="text-white">
+                  <CardTitle tag="h4" className="text-white">
                     Servicess
                   </CardTitle>
-                  <CardLink href="#" className="text-decoration-none">
+                  <CardLink href="#" className="text-decoration-none py-1">
                     <span className="text-white">Another Link</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none  ms-0">
+                  <CardLink href="#" className="text-decoration-none py-1 ms-0">
                     <span className="text-white">Another Link</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none  ms-0">
+                  <CardLink href="#" className="text-decoration-none py-1 ms-0">
                     <span className="text-white">Another Link</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none  ms-0">
+                  <CardLink href="#" className="text-decoration-none py-1 ms-0">
                     <span className="text-white">Another Link</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none  ms-0">
+                  <CardLink href="#" className="text-decoration-none py-1 ms-0">
                     <span className="text-white">Another Link</span>
                   </CardLink>
                 </CardBody>
@@ -135,22 +135,22 @@ const Footer = () => {
             <Col md="2" sm="6">
               <Card className="bg-transparent">
                 <CardBody className="ps-1 d-flex flex-column">
-                  <CardTitle tag="h5" className="text-white">
+                  <CardTitle tag="h4" className="text-white">
                     Others
                   </CardTitle>
-                  <CardLink href="#" className="text-decoration-none">
+                  <CardLink href="#" className="text-decoration-none py-1">
                     <span className="text-white">Another Link</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none  ms-0">
+                  <CardLink href="#" className="text-decoration-none py-1  ms-0">
                     <span className="text-white">Another Link</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none  ms-0">
+                  <CardLink href="#" className="text-decoration-none py-1 ms-0">
                     <span className="text-white">Another Link</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none  ms-0">
+                  <CardLink href="#" className="text-decoration-none py-1 ms-0">
                     <span className="text-white">Another Link</span>
                   </CardLink>
-                  <CardLink href="#" className="text-decoration-none  ms-0">
+                  <CardLink href="#" className="text-decoration-none py-1 ms-0">
                     <span className="text-white">Another Link</span>
                   </CardLink>
                 </CardBody>
@@ -159,7 +159,7 @@ const Footer = () => {
             <Col md="3" sm="6">
               <Card className="bg-transparent">
                 <CardBody>
-                  <CardTitle tag="h5" className="text-white">
+                  <CardTitle tag="h4" className="text-white mb-4">
                     Follow Us
                   </CardTitle>
                   <CardLink href="#">
@@ -215,7 +215,7 @@ const Footer = () => {
             </Col>
           </Row>
         </Container>
-        <Row style={{ height: '50px', position: 'relative', top: '25%' }}>
+        <Row style={{ height: '50px', position: 'relative', top: '20%' }}>
           <Col md='12' sm='6'>
             <div className="text-white d-flex justify-content-center align-items-center bg-secondary"
               style={{ height: '50px' }}>

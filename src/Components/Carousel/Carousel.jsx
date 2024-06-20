@@ -71,19 +71,19 @@ function CarouselComponent(args) {
       {...args}
       style={{ width: '100%', height: '100vh' }}
     >
-      <CarouselIndicators
+       <CarouselIndicators
         items={items}
         activeIndex={activeIndex}
         onClickHandler={goToIndex}
-      />
+      /> 
       {slides}
       <CarouselControl
-        direction="prev"
+       // direction="prev"
         directionText="Previous"
         onClickHandler={previous}
       />
       <CarouselControl
-        direction="next"
+       // direction="next"
         directionText="Next"
         onClickHandler={next}
       />

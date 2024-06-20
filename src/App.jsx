@@ -6,18 +6,18 @@ import Banner from './Components/BannerBox/Banner'
 import Citysearch from './Components/CitySearchBox/Citysearch';
 import SearchLocate from './Components/Search-Locate-Ct/SearchLocate'
 import Footer from './Components/Footer/Footer'
-import Testingmonial from './Components/test'
+import Testingmonial from './Components/Tesimonial/TestimonialCard'
 const App = () => {
   return (
     <>
-      {/* <HeaderMain />
+       <HeaderMain />
       <Carousel />
-      <Box />
+       {/* <Box />  */}
       <SearchLocate/>
       <Banner />
       <Citysearch />
-      <Footer/> */}
       <Testingmonial/>
+      <Footer/> 
     </>
   )
 }

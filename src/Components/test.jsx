@@ -127,15 +127,7 @@ const Example = () => {
                         {slides}
                     </Carousel>
                     
-                    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-                        <CarouselIndicators
-                            items={items}
-                            activeIndex={activeIndex}
-                            onClickHandler={goToIndex}
-                            className="m-5"
-                        />
-                        {slides}
-                    </Carousel>
+                   
                     </Col>
                 </Row>
                     
