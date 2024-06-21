@@ -38,7 +38,7 @@ const CardCarousel = ({ items, CardComponent, showIndicators = true }) => {
             activeIndex={activeIndex}
             next={next}
             previous={previous}
-            style={{ borderRadius: '20px', overflow: 'hidden' }}
+            style={{ borderRadius: '20px', overflow: 'hidden' ,boxShadow: '2px 2px 4px rgba(0, 0, 0, 1)'}}
         >
             {slides}
             {showIndicators && (

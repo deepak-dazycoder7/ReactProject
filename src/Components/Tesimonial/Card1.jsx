@@ -12,7 +12,7 @@ import {
 
 const Card1 = ({ item }) => {
   return (
-    <Card style={{ borderRadius: '20px', paddingTop: '10px', minHeight: '218px' }}>
+    <Card style={{ borderRadius: '20px', paddingTop: '10px', minHeight: '218px',  }}>
       <CardBody>
       <Row>
           <Col xs="12" md="12" className="d-flex align-items-center">
