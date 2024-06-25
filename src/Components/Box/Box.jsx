@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Button, Nav, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Input } from "reactstrap";
+import { Container, Row, Col, Button, Nav, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Input, } from "reactstrap";
 import SearchBg from '../../assets/search-box-bg.jpg'
 import './Box.css';
 
@@ -21,12 +21,12 @@ const Box = () => {
 
 
   return (
-    <Container fluid className="d-flex align-items-center justify-content-center" 
-    style={{ backgroundImage: `url(${SearchBg})`,height: '400px', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+    <Container fluid className="d-flex align-items-center justify-content-center"
+      style={{ backgroundImage: `url(${SearchBg})`, height: '400px', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       <Container className="shadow rounded-4 p-2 bg-white" style={{ width: "60rem", height: "auto" }}>
         <section>
           {/* Tab Pane Button Links */}
-          <div className="tab-pane">
+          <Row>
             <Nav className="justify-content-evenly">
               {[...Array(6)].map((_, index) => (
                 <NavItem key={index}>
@@ -44,23 +44,16 @@ const Box = () => {
                 </NavItem>
               ))}
             </Nav>
-          </div>
+          </Row>
+
           {/* Horizontel line break */}
           <hr className="mt-0" />
-
-          {/* tab content show selected by user  */}
-          <div className="tab-content m-3">
-            {[...Array(6)].map((_, index) => (
-              <div key={index} className={`tab-pane ${activeTab === index ? "active" : ""}`}>
-                {activeTab === index && <div>Content for Link{index}</div>}
-              </div>
-            ))}
-          </div>
-
         </section>
+
+
         {/* Search box and dropdown button */}
 
-        <div className="container-box d-flex">
+        <div className="d-flex">
           {/* DropToggle & input Search box  */}
           <section>
             <div className="ms-5 mb-2 focus-container d-flex" style={{ width: '700px' }}>
@@ -69,7 +62,7 @@ const Box = () => {
                   <DropdownToggle
                     caret
                     color="outline-primary"
-                    className="droptoggle border rounded-start-pill border-primary"
+                    className=" rounded-start-pill"
                   >
                     {selectedItem}
                   </DropdownToggle>

@@ -1,0 +1,35 @@
+.form-group {
+    position: relative;
+
+}
+.form-group .input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.form-group .input:focus {
+    border-color: #3b82f6;
+    box-shadow: none ;
+}
+.form-group label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 15px;
+    color: #3b82f6;
+    transition: top 0.3s, font-size 0.3s;
+}
+.form-group .input:focus + label,
+.form-group .input:not(:placeholder-shown) + label {
+    top: -8px;
+    font-size: 15px;
+}
+
+.input {
+    text-indent: 10px; /* Optional: Adds padding to the right side */
+}

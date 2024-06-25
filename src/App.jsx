@@ -7,6 +7,7 @@ import Citysearch from './Components/CitySearchBox/Citysearch';
 import SearchLocate from './Components/Search-Locate-Ct/SearchLocate'
 import Footer from './Components/Footer/Footer'
 import Testingmonial from './Components/Tesimonial/TestimonialCard'
+import ContactUs from './Components/ContactUs/ContactUs'
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
       <Banner />
       <Citysearch />
       <Testingmonial/>
+      <ContactUs/>
       <Footer/> 
     </>
   )
