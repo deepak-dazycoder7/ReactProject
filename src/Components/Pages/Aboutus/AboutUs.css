@@ -1,0 +1,31 @@
+.image-wrapper {
+    overflow: hidden;
+}
+
+.image-large {
+    width: 150px;
+    height: 300px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.image-small {
+    width: 120px;
+    height: 140px;
+}
+.img2{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.img3{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+h3 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

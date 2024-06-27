@@ -5,6 +5,7 @@ import Banner from "../BannerBox/Banner";
 import Citysearch from "../CitySearchBox/Citysearch";
 import SearchLocate from "../Search-Locate-Ct/SearchLocate";
 import Testingmonial from "../Tesimonial/TestimonialCard";
+import Footer from "../Footer/Footer";
 const Home = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const Home = () => {
       <Banner />
       <Citysearch />
       <Testingmonial />
+      <Footer />
     </>
   );
 };
