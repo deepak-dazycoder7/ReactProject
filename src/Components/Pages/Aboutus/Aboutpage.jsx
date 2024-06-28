@@ -3,11 +3,6 @@ import {
   Container,
   Row,
   Col,
-  Card,
-  CardFooter,
-  CardBody,
-  CardText,
-  CardHeader,
 } from "reactstrap";
 import "./AboutUs.css";
 import abimg1 from "./Aboutimg/aboutimg1.jpg";
@@ -33,29 +28,27 @@ const Aboutpage = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            height: "100vh", // Adjust height as needed
+            height: "500px", // Adjust height as needed
             width: "100%",
           }}
         >
           <Row>
             <Col md={{ size: "5", offset: "1" }}>
-              <Card style={{ marginTop: "80px" }}>
-                <CardHeader style={{ background: 'linear-gradient(90deg, #affcaf, #12dff3)'}}>
-                  <h3 className="text-center"> Who We Are?</h3>
-                </CardHeader>
-                <CardBody >
-                  <CardText >
-                    According to my profile, my brand‘s story started with my
-                    sister’s Sailor Moon VHS tapes. Those tapes eventually led
-                    me to create content centered around anime and different
-                    “nerdy” entertainment aspects. My brand's story is unlike
-                    any other, and the same goes for yours. No two companies
-                    have the same founding story or reason for existing. Your
-                    history and values are integral parts of your brand.
-                  </CardText>
-                </CardBody>
-                <CardFooter style={{ background: 'linear-gradient(90deg, #affcaf, #12dff3)', textAlign:'center'}}>Footer</CardFooter>
-              </Card>
+              <div className="p-4" style={{
+                background: "linear-gradient(90deg, #4b6cb7 0%, #182848 100%)",
+                marginTop: "60px", marginLeft: '70px', borderTopLeftRadius: '180px', borderBottomRightRadius: '180px',
+              height: '400px', width: "370px"}}>
+                <h3 className="text-center mt-2 text-white"> Who We Are?</h3>
+                <div className="mt-5 text-white">
+                  According to my profile, my brand‘s story started with my
+                  sister’s Sailor Moon VHS tapes. Those tapes eventually led
+                  me to create content centered around anime and different
+                  “nerdy” entertainment aspects. My brand's story is unlike
+                  any other, and the same goes for yours. No two companies
+                  have the same founding story or reason for existing. Your
+                  history and values are integral parts of your brand.
+                </div>
+              </div>
             </Col>
 
             <Col md={{ size: "5" }}>
@@ -105,6 +98,9 @@ const Aboutpage = () => {
               </div>
             </Col>
           </Row>
+        </div>
+        <div>
+
         </div>
       </Container>
     </>

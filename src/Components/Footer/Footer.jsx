@@ -51,20 +51,20 @@ const Footer = () => {
         </Row>
         <Container style={{ position: "relative", top: "15%", marginLeft: '60px' }}>
           <Row >
-            <Col md="3" sm="6">
+            <Col md="3" sm="6" className="m-0 p-0">
               <Card className="bg-transparent">
                 <CardBody>
                   <CardTitle tag="h2" className="text-white mb-4">
                     Dazy-Coders
                   </CardTitle>
                   <CardText>
-                    <div className="text-white d-flex ">
-                      <span className="border border-primary fs-5 rounded-circle  " style={{ padding:'5px 12px 0px 12px'}}>
+                    <div className="text-white d-flex  ">
+                      <span className=" border border-primary overflow-hidden fs-5 rounded-circle  p-1 px-3 pb-1" >
                         <MdLocationOn />
                       </span>
-                      <span className="ms-3 ">
+                      <div className="ms-3 ">
                         1H second floore, Near Daya Tower, Neemuch (M.P.)
-                      </span>
+                      </div>
                     </div>
                   </CardText>
                   <CardText>
@@ -156,7 +156,7 @@ const Footer = () => {
                 </CardBody>
               </Card>
             </Col>
-            <Col md="3" sm="6">
+            <Col md="3" sm="6" className="m-0 p-0">
               <Card className="bg-transparent">
                 <CardBody>
                   <CardTitle tag="h4" className="text-white mb-4">
@@ -188,8 +188,8 @@ const Footer = () => {
                     </span>
                   </CardLink>
                 </CardBody>
-                <CardBody>
-                  <CardSubtitle tag="h5" className="text-white">
+                <CardBody className="m-0 p-0">
+                  <CardSubtitle tag="h5" className="text-white m-2">
                     Download App
                   </CardSubtitle>
                   <CardLink href="#">

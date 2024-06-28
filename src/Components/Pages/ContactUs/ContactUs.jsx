@@ -116,10 +116,6 @@ const ContactUs = () => {
                         <Input className="input" type="textarea" placeholder=" " />
                         <Label className="call-label">Drop Your Problem Query</Label>
                       </FormGroup>
-                      <FormGroup className="call-form">
-                        <Input className="input" type="file" />
-                        <Label className="call-label">Upload Your File</Label>
-                      </FormGroup>
                       <div className="d-flex justify-content-center">
                         <Button style={{ width: '400px', fontWeight: '600', borderRadius: '20px' }} color="primary">SUBMIT EMAIL</Button>
                       </div>
@@ -181,10 +177,6 @@ const ContactUs = () => {
                       <FormGroup className="call-form">
                         <Input className="input" type="textarea" placeholder=" " />
                         <Label className="call-label">Drop Your Problem Query</Label>
-                      </FormGroup>
-                      <FormGroup className="call-form">
-                        <Input className="input" type="file" />
-                        <Label className="call-label">Upload Your File</Label>
                       </FormGroup>
                       <div className="d-flex justify-content-center">
                         <Button style={{ width: '400px', fontWeight: '600', borderRadius: '20px' }} color="primary">SUBMIT EMAIL</Button>
